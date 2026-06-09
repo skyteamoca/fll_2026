@@ -1,15 +1,15 @@
 import base
-import r1m1m2,r2m11m12 
+import r1m1m2, r2m11m12, r3m3m4m13, r4m5m6m7m9a, r5m9m10m14
 from pybricks.parameters import Button
 from pybricks.tools import wait
 
 # Lista przypisująca wybrane misje z modułu missions.py do pozycji w menu
 lista_misji = [
-    missions.misja_m1m2,         # 1
-    missions.misja_m11m12,       # 2
-    missions.misja_m3m4m13,      # 3
-    missions.misja_m5m6m7m9a,    # 4
-    missions.misja_m9m10m14,     # 5
+    r1m1m2.run,         # 1
+    r2m11m12.run,       # 2
+    r3m3m4m13.run,      # 3
+    r4m5m6m7m9a.run,    # 4
+    r5m9m10m14.run,     # 5
 ]
 
 def main():
