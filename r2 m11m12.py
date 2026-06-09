@@ -2,7 +2,7 @@ import base
 import robot_move
 from pybricks.tools import wait
 
-def misja_m11m12():
+def run():
     # podjazd do łódki
     robot_move.jazda_prosto(505, predkosc_max=600, dystans_hamowania=50, pauza=10)
     robot_move.jazda_prosto(-140, predkosc_max=700, pauza=10)
