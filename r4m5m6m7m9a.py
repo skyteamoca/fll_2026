@@ -2,7 +2,7 @@ import base
 import robot_move
 from pybricks.tools import wait
 
-def misja_m5m6m7m9a():
+def run():
     wait(10)
     base.c_motor.run_angle(-1000, 200, wait=False)
     robot_move.jazda_prosto(675, predkosc_max=800)
