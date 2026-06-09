@@ -1,5 +1,5 @@
 import base
-import missions
+import r1m1m2,r2m11m12 
 from pybricks.parameters import Button
 from pybricks.tools import wait
 
