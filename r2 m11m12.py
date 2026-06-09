@@ -1,4 +1,6 @@
-
+import base
+import robot_move
+from pybricks.tools import wait
 
 def misja_m11m12():
     # podjazd do łódki
