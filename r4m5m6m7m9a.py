@@ -5,12 +5,14 @@ from pybricks.tools import wait
 def run():
     wait(10)
     base.c_motor.run_angle(-1000, 200, wait=False)
-    robot_move.jazda_prosto(675, predkosc_max=800)
+    robot_move.jazda_prosto(688, predkosc_max=800)
     wait(10)
-    robot_move.spin_turn_v1(50, predkosc_max=800, Kp=7)
+    robot_move.spin_turn_v1(-19, predkosc_max=600, Kp=7, pauza=10)
+    #wyrzucenie głazów
+    robot_move.spin_turn_v1(61, predkosc_max=800, Kp=7)
     wait(10)
-    robot_move.spin_turn_small(-13, predkosc_max=500)
-    wait(10)
+    #robot_move.spin_turn_small(-13, predkosc_max=500)
+    #wait(10)
     base.c_motor.run_angle(-1000, 175)#200
     wait(10)
     robot_move.jazda_prosto(32, predkosc_max=100)
@@ -22,13 +24,21 @@ def run():
     wait(10)
     
     #wypchanie kamieni
-    robot_move.spin_turn_v1(-126, predkosc_max=500)
+    robot_move.spin_turn_v1(-129, predkosc_max=500)
     wait(100)
     base.prawy.run_time(-500, 1100, wait=False)
     base.lewy.run_time(-415, 1100)
     wait(50)
     #Silos
-    
+    #robot_move.nakladka_lewa(-90, 500)
+    robot_move.nakladka_lewa(90, 2000)
+    robot_move.nakladka_lewa(-90, 400)
+    robot_move.nakladka_lewa(90, 2000)
+    robot_move.nakladka_lewa(-90, 400)
+    robot_move.nakladka_lewa(90, 2000)
+    robot_move.nakladka_lewa(-90, 400)
+    robot_move.smooth_turn(600, 100, 500, pauza=10)
+
     #Podjazd do wagonika
     # base.prawy.run_time(500, 1000, wait=False)
     # base.lewy.run_time(180, 1000)
