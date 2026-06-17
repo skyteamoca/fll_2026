@@ -1,4 +1,4 @@
-#Orest 16.06.26
+#Matt 17.06.26
 import base
 import robot_move
 from pybricks.tools import wait
@@ -13,7 +13,9 @@ def run():
     robot_move.jazda_prosto(143, predkosc_max=800, dystans_hamowania=100, pauza=200)
     robot_move.spin_turn_v1(87, 200, 50, pauza=10)
     wait(100)
-    base.d_motor.run_angle(150, 230)
+    #opuszczenie nakładki do oporu
+    base.d_motor.run_until_stalled(speed=200, duty_limit=85)
+    #base.d_motor.run_angle(150, 230) #opuszczenie nakłądki do artefaktu
     base.c_motor.run_angle(450, 350)
     wait(10)
     robot_move.jazda_prosto(154, predkosc_max=200, pauza=10)
