@@ -1,4 +1,4 @@
-#Matt 17.06
+#Krycha 17.06
 import base
 import robot_move
 from pybricks.tools import wait
@@ -43,6 +43,9 @@ def run():
     robot_move.nakladka_lewa(-90, 400)
     wait(10)
     robot_move.jazda_prosto(250, predkosc_max=1200)
+    robot_move.spin_turn_v1(80, predkosc_max=800)
+    robot_move.jazda_prosto(-670, 1200)
+   
     #robot_move.smooth_turn(300, 180, 500, pauza=10)
 
     #Podjazd do wagonika
