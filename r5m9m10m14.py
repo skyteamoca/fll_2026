@@ -1,3 +1,4 @@
+#Krycha 17.06
 import base
 import robot_move
 from pybricks.tools import wait
@@ -36,7 +37,7 @@ def run():
     robot_move.jazda_prosto(120, predkosc_max=700)
     robot_move.spin_turn_v1(60, predkosc_max=600)
     robot_move.jazda_prosto(330, 1200)
-    robot_move.spin_turn_small(17, predkosc_max=600)
+    robot_move.spin_turn_small(13, predkosc_max=600)
     robot_move.jazda_prosto(160, predkosc_max=600)
     robot_move.nakladka_prawa(300, predkosc=600)
     robot_move.jazda_prosto(-300, 700)
