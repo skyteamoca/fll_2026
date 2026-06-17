@@ -1,4 +1,4 @@
-#Matt 17.06.26
+#Orest 17.06.26
 import base
 import robot_move
 from pybricks.tools import wait
@@ -14,7 +14,8 @@ def run():
     robot_move.spin_turn_v1(87, 200, 50, pauza=10)
     wait(100)
     #opuszczenie nakładki do oporu
-    base.d_motor.run_until_stalled(speed=200, duty_limit=85)
+    base.d_motor.run_until_stalled(speed=200, duty_limit=23)
+    base.d_motor.run_angle(200, -20)
     #base.d_motor.run_angle(150, 230) #opuszczenie nakłądki do artefaktu
     base.c_motor.run_angle(450, 350)
     wait(10)
@@ -25,36 +26,36 @@ def run():
     wait(50)
     
     # podniesienie wózka
-    base.c_motor.run_angle(120, -285)
+    base.c_motor.run_angle(50, -285)
     wait(1000)
     robot_move.jazda_prosto(-144, predkosc_max=300, pauza=10)
     
     # Skręt do foki
-    robot_move.spin_turn_small(43, 500, pauza=10)
+    robot_move.spin_turn_small(40, 500, pauza=10)
     wait(10)
     base.d_motor.run_angle(250, -90, wait=False)
     base.c_motor.run_angle(400, 300, wait=False)
     
     # podjazd do foki
-    robot_move.jazda_prosto(330, predkosc_max=900, pauza=10)
+    robot_move.jazda_prosto(350, predkosc_max=900, pauza=10)
     
     # podnoszenie foki
-    base.c_motor.run_angle(400, -300)
+    base.c_motor.run_angle(1000, -300)
     wait(100)
-    robot_move.jazda_prosto(-118, predkosc_max=1000, pauza=10)
+    robot_move.jazda_prosto(-138, predkosc_max=1000, pauza=10)
     robot_move.spin_turn_v1(-31, predkosc_max=500, Kp=4.0, Ki=0.1)
     base.c_motor.run_angle(700, -250, wait=False)
     robot_move.jazda_prosto(560, predkosc_max=1000, pauza=10)
     
     # skręt do wiaderka
     #test
-    robot_move.spin_turn_v1(7, predkosc_max=300, pauza=10)
+    # robot_move.spin_turn_v1(7, predkosc_max=300, pauza=10)
     base.c_motor.run_angle(800, 520)
     wait(100)
     base.c_motor.run_angle(-300, 300)
     wait(100)
-    robot_move.spin_turn_small(-20, 500, pauza=30)
-    robot_move.smooth_turn(400, -80, 500, pauza=10)
+    robot_move.spin_turn_small(-26, 500, pauza=30)
+    robot_move.smooth_turn(200, -50, 500, pauza=10)
     robot_move.jazda_prosto(-200, predkosc_max=1000, pauza=10)
     robot_move.spin_turn_v1(-40, predkosc_max=300, pauza=10)
-    robot_move.smooth_turn(400, -80, 500, pauza=10)
+    robot_move.smooth_turn(600, -100, 500, pauza=10)
