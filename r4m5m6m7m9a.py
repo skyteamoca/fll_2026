@@ -1,4 +1,4 @@
-#Krycha 17.06
+#Krycha 22.06
 import base
 import robot_move
 from pybricks.tools import wait
