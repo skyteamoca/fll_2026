@@ -1,4 +1,4 @@
-#Orest 17.06.26
+#Franek 22.06.26
 import base
 import robot_move
 from pybricks.tools import wait
@@ -26,7 +26,7 @@ def run():
     wait(50)
     
     # podniesienie wózka
-    base.c_motor.run_angle(50, -285)
+    base.c_motor.run_angle(500, -265)
     wait(1000)
     robot_move.jazda_prosto(-144, predkosc_max=300, pauza=10)
     
@@ -56,6 +56,7 @@ def run():
     wait(100)
     robot_move.spin_turn_small(-26, 500, pauza=30)
     robot_move.smooth_turn(200, -50, 500, pauza=10)
-    robot_move.jazda_prosto(-200, predkosc_max=1000, pauza=10)
+    robot_move.jazda_prosto(200, predkosc_max=1000, pauza=10)
+    robot_move.jazda_prosto(-200, 1000, pauza=10)
     robot_move.spin_turn_v1(-40, predkosc_max=300, pauza=10)
     robot_move.smooth_turn(600, -100, 500, pauza=10)
