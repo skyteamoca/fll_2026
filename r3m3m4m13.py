@@ -1,4 +1,4 @@
-#Orest 24.06.2026r
+#Franek 24.06.26
 import base
 import robot_move
 from pybricks.tools import wait
