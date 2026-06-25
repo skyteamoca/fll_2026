@@ -1,4 +1,4 @@
-#Krycha 22.06
+#Orest 25.06.26
 import base
 import robot_move
 from pybricks.tools import wait
@@ -15,7 +15,7 @@ def run():
     wait(20)
     robot_move.spin_turn_small(-3, predkosc_max=500)
     wait(20)
-    robot_move.jazda_prosto(-10, predkosc_max=100)
+    robot_move.jazda_prosto(-13, predkosc_max=100)
     wait(20)
     base.c_motor.run_angle(-1000, 185)#200
     wait(10)
@@ -30,8 +30,8 @@ def run():
     #wypchanie kamieni
     robot_move.spin_turn_v1(-129, predkosc_max=500)
     wait(100)
-    base.prawy.run_time(-460, 1188, wait=False)
-    base.lewy.run_time(-415, 1188)
+    base.prawy.run_time(-460, 1215, wait=False)
+    base.lewy.run_time(-415, 1215)
     wait(50)
     #Silos
     #robot_move.nakladka_lewa(-90, 500)
@@ -39,8 +39,8 @@ def run():
     robot_move.nakladka_lewa(-90, 400)
     robot_move.nakladka_lewa(90, 2000)
     robot_move.nakladka_lewa(-90, 400)
-    robot_move.nakladka_lewa(90, 2000)
-    robot_move.nakladka_lewa(-90, 400)
+    # robot_move.nakladka_lewa(90, 2000)
+    # robot_move.nakladka_lewa(-90, 400)
     wait(10)
     robot_move.jazda_prosto(250, predkosc_max=1200)
     robot_move.spin_turn_v1(80, predkosc_max=800)
