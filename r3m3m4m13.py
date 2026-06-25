@@ -31,7 +31,7 @@ def run():
     robot_move.jazda_prosto(-144, predkosc_max=300, pauza=10)
     
     # Skręt do foki
-    robot_move.spin_turn_small(39.9, 500, pauza=10)
+    robot_move.spin_turn_small(39.5, 500, pauza=10)
     wait(10)
     base.d_motor.run_angle(250, -90, wait=False)
     base.c_motor.run_angle(400, 300, wait=False)
@@ -40,7 +40,7 @@ def run():
     robot_move.jazda_prosto(353, predkosc_max=900, pauza=10)
     
     # podnoszenie foki
-    base.c_motor.run_angle(1000, -300)
+    base.c_motor.run_angle(1200, -300)
     wait(100)
     robot_move.jazda_prosto(-123, predkosc_max=1000, pauza=10)
     robot_move.spin_turn_v1(-32, predkosc_max=500, Kp=4.0, Ki=0.1)
@@ -53,8 +53,8 @@ def run():
     base.c_motor.run_angle(-300, 300)
     wait(100)
     robot_move.spin_turn_small(-30, 500, pauza=30)
-    robot_move.smooth_turn(200, -63, 500, pauza=10)
-    robot_move.jazda_prosto(230, predkosc_max=1000, pauza=10)
-    robot_move.jazda_prosto(-230, 1000, pauza=10)
-    robot_move.spin_turn_v1(-40, predkosc_max=300, pauza=10)
-    robot_move.smooth_turn(550, -105, 500, pauza=10)
+    robot_move.smooth_turn(230, -63, 500, pauza=10)
+    robot_move.jazda_prosto(250, predkosc_max=1000, pauza=10)
+    robot_move.jazda_prosto(-250, 1000, pauza=10)
+    robot_move.spin_turn_v2(-40, predkosc_max=300, pauza=10)
+    robot_move.smooth_turn(600, -110, 500, pauza=10)
