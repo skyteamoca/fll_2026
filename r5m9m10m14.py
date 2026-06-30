@@ -1,4 +1,4 @@
-#Krycha 24.06
+#Orest 30.06.26
 import base
 import robot_move
 from pybricks.tools import wait
@@ -37,19 +37,23 @@ def run():
 
     robot_move.nakladka_prawa(-360, 500)#wyjęcie beczki
     robot_move.spin_turn_v1(-35, 400, pauza=10)
-    robot_move.jazda_prosto(120, predkosc_max=900)
-    robot_move.spin_turn_v1(37, predkosc_max=400, pauza=10)
-    robot_move.jazda_prosto(380, 1200, pauza=10)
-    robot_move.spin_turn_v1(44, predkosc_max=400, pauza=10)
-    robot_move.jazda_prosto(90, predkosc_max=1100, pauza=10)
-    #puszczenie beczki
-    robot_move.spin_turn_v1(-5, 400)
-    robot_move.nakladka_prawa(300, predkosc=800)
-    robot_move.spin_turn_v1(-45, 400, pauza=10)
-    robot_move.jazda_prosto(580, 1000)
-    robot_move.spin_turn_v1(133, 600, pauza=20)
-    robot_move.jazda_prosto(300, 1000, pauza=50)
-    robot_move.jazda_prosto(-500, 1000)
+    robot_move.jazda_prosto(230, predkosc_max=900)
+    robot_move.smooth_turn(-600,200,700)
+
+
+    # robot_move.jazda_prosto(120, predkosc_max=900)
+    # robot_move.spin_turn_v1(37, predkosc_max=400, pauza=10)
+    # robot_move.jazda_prosto(380, 1200, pauza=10)
+    # robot_move.spin_turn_v1(44, predkosc_max=400, pauza=10)
+    # robot_move.jazda_prosto(90, predkosc_max=1100, pauza=10)
+    # #puszczenie beczki
+    # robot_move.spin_turn_v1(-5, 400)
+    # robot_move.nakladka_prawa(300, predkosc=800)
+    # robot_move.spin_turn_v1(-45, 400, pauza=10)
+    # robot_move.jazda_prosto(580, 1000)
+    # robot_move.spin_turn_v1(133, 600, pauza=20)
+    # robot_move.jazda_prosto(300, 1000, pauza=50)
+    # robot_move.jazda_prosto(-500, 1000)
 
 
 
