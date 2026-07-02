@@ -1,5 +1,5 @@
 import base
-import r1m1m2, r2m11m12, r3m3m4m13, r4m5m6m7m9a, r5m9m10m14
+import r1m1m2, r2m11m12, r3m3m4m13, r4m5m6m7m9a, r5m9m10m14, r6_artefakty
 from pybricks.parameters import Button
 from pybricks.tools import wait
 
@@ -10,6 +10,8 @@ lista_misji = [
     r3m3m4m13.run,      # 3
     r4m5m6m7m9a.run,    # 4
     r5m9m10m14.run,     # 5
+    r6_artefakty.run,   # 6
+    r7_judge_session.run,   # 7
 ]
 
 def main():
