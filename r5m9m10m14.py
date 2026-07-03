@@ -38,7 +38,7 @@ def run():
     robot_move.nakladka_prawa(-360, 500)#wyjęcie beczki
     robot_move.spin_turn_v1(-35, 400, pauza=10)
     robot_move.jazda_prosto(230, predkosc_max=900)
-    robot_move.smooth_turn(-600,200,700)
+    robot_move.smooth_turn(-350,200,700)
 
 
     # robot_move.jazda_prosto(120, predkosc_max=900)
